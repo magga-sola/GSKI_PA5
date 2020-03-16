@@ -1,3 +1,6 @@
+from Bucket import NotFoundException
+from Bucket import ItemExistsException
+
 class HashMap:
     # 50%
     def __init__(self):
@@ -5,8 +8,10 @@ class HashMap:
     def __str__(self):
         pass
     def __setitem__(self, key, data):
+        """ overwritten to allow 'some_hash_map[key]= data]' """
         pass
     def __getitem__(self, key):
+        """ overwritten to allow '' """
         pass
     def __len__(self):
         pass
